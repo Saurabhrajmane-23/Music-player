@@ -1,0 +1,218 @@
+html, body{
+    position: relative;
+    font-family: sans-serif;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    height: 25vh;
+    width: 12.5vw;
+
+    
+}
+#Search{
+    position: absolute;
+    height: 6vh;
+    width: 25vw;
+    left: 38vw;
+    top: 40px;
+    font-family: sans-serif;
+    font-size: large;
+    border-radius: 10px;
+    color: antiquewhite;
+    background-color: rgba(0,0,0,0.4);
+    border-color: antiquewhite;
+}
+#Search::placeholder{
+    color: antiquewhite;
+}
+/* #Search :target{
+
+} */
+
+/* #top-header{
+    position: absolute;
+} */
+.account{
+    position: absolute;
+    left: 85vw;
+    top: 30px;
+    color: #1E3050;
+    font-size: 25px;
+}
+.notification{
+    position: absolute;
+    left: 90vw;
+    top: 30px;
+    color: #1E3050;
+    font-size: 25px;
+}
+.dropdown{
+    position: absolute;
+    left: 95vw;
+    top: 30px;
+    color: #1E3050;
+    font-size: 25px;
+}
+
+#bkg-video{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+@media(min-aspect-ratio: 16/9){
+    #bkg-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio: 16/9){
+    #bkg-video{
+        width: auto;
+        height: 100%;
+    }
+}
+#top-header a :hover{
+    transition: 0.3s ease-in-out;
+    transform: scale(0.85);
+}
+
+#bottom-header{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    
+}
+#home{
+    position: absolute;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 25vw;
+    margin-top: -70px;
+    font-size: 20px;
+    
+}
+#home:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.25s;
+    transition: 0.25s ease-in-out;
+    transform: scale(1.2);
+}
+#trending{
+    position: absolute;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 33vw;
+    margin-top: -70px;
+    font-size: 20px;
+}
+#trending:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.25s;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.2);
+}
+#genres{
+    position: absolute;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 42vw;
+    margin-top: -70px;
+    font-size: 20px;
+}
+#genres:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.25s;
+    transition: 0.25s ease-in-out;
+    transform: scale(1.2);
+}
+#ta{
+    position: absolute;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 50vw;
+    margin-top: -70px;
+    font-size: 20px;
+}
+#ta:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.25s;
+    transition: 0.25s ease-in-out;
+    transform: scale(1.2);
+}
+#tar{
+    position: absolute;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 60vw;
+    margin-top: -70px;
+    font-size: 20px;
+}
+#tar:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.25s;
+    transition: 0.25s ease-in-out;
+    transform: scale(1.2);
+}
+#pd{
+    position: absolute;
+    color: antiquewhite;
+    text-decoration: none;
+    margin-left: 70vw;
+    margin-top: -70px;
+    font-size: 20px;
+}
+#pd:hover{
+    color: white;
+    border-bottom: 2px solid white;
+    transition: border-bottom 0.25s;
+    transition: 0.25s ease-in-out;
+    transform: scale(1.2);
+}
+#box{
+    height: 0;
+    width: 0;
+    position: fixed;
+    top: 5vw;
+    right: 2.75vw;
+    overflow: hidden;
+    transition: all 0.75s ease-in-out;
+}
+#box:target{
+    height: 30%;
+    width: 15%;
+    top: 9%;
+    left: 82%;
+    background-color: rgb(33, 15, 92);
+    border-radius: 15px;
+}
+#main{
+    position: absolute;
+    height: 543.2px;
+    width: 100vw;
+    border-top: 2px solid antiquewhite;
+    display: flex;
+    flex-direction: row;
+}
+#library{
+    width: 24vw;
+    border-right: 2px solid white;
+}
+#playlist-on{
+    width: 52vw;
+    border-right: 2px solid white;
+}
+#song-playing{
+    width: 24vw;
+}
+
